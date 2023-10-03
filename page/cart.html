@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="conatiner">
+        <div class="header">
+            <img src="../image/logo.jpg" alt="">
+           <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li>ABOUT</li>
+                <li><a href="../page/bill.html">BILLS</a></li>
+                <a href="page/cart.html">
+                    <li class="header_cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span  id="cartItemCount"  class="header_number">0</span>
+                    </li> 
+                </a>
+           </ul>
+        </div>
+        <div class="content">
+            <div class="cart-list"></div>
+            <div class="shopping" >
+                <a href="../index.html" class="back" ><i class="fa-solid fa-arrow-left"></i> Back to Shopping</a>
+            </div >
+        </div>
+    </div>
+    <div id="information-backdrop">
+        <div class="information">
+            <form action="" class="form_information">
+                <div class="title">
+                    <h2>Thông tin người mua</h2>
+                    <button class="cancel"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="user_name">
+                    <label for="">Họ và tên <span>*</span></label>
+                    <span id="error_form" style="color: red;"></span>
+                   <div class="full_name">
+                        <input id="first_name" class="first_name" type="text" placeholder="Họ">
+                        <input id="last_name" class="last_name" type="text" placeholder="Tên">
+                   </div>
+                </div>
+                <div style="display: flex;">
+                    <label class="email_title" for="">Email <span>*</span></label> 
+                    <span id="error_form_email" style="color: red; margin-left: 10px;"></span>
+                </div>
+                <input id="email" class="email" type="email" placeholder="Email">
+                <div style="display: flex; align-items: center;">
+                    <label class="phone_title" for="">Số điện thoại <span>*</span></label>
+                    <span id="error_form_phone" style="color: red; margin-left: 10px; margin-top: 4px;"></span>
+                </div>
+                <input id="phone" class="phone" type="type" placeholder="Số điện thoại">
+               <div style="display: flex;">
+                <label class="address_title" for="">Địa chỉ <span>*</span></label>
+                <span id="error_form_address" style="color: red; margin-left: 10px;"></span>
+               </div>
+                <div class="address">
+                    <select id="city"  class="city">
+                        <option value="" selected >--Chọn Tỉnh/Thành phố--</option>
+                    </select>
+                    <select id="district" class="district">
+                        <option value="" selected >--Chọn Quận/Huyện--</option>
+                    </select>
+                    <select id="commune" class="commune">
+                        <option value="" selected >--Chọn Phường/Xã--</option>
+                    </select>
+                </div>
+                <input id="code" class="code" type="type" placeholder="Số Nhà">
+                <label  class="message_title" for="">Lời nhắn</label>
+                <textarea class="message" name="" id="message" cols="30" rows="10"></textarea>
+                <div class="action">
+                    <button class="cancel">Hủy</button>
+                    <button class="confirm" type="button" onclick="information()">Xác nhận</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="../js/listAddress.js"></script>
+    <script src="../js/localStorage.js"></script>
+    <script src="../js/validateForm.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/listData.js"></script>
+    
+</body>
+</html>

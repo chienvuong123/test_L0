@@ -1,0 +1,48 @@
+{
+  "bills": [
+    {
+      "id": "dec265",
+      "name": "  ff   ff",
+      "email": "chien22tuoi@gmail.com",
+      "phone": "0375509193",
+      "address": " Phường Phúc Tân, Quận Hoàn Kiếm, Thành phố Hà Nội",
+      "numberHome": "3",
+      "purchase_date": "10/1/2023",
+      "inFor": [
+        {
+          "id": 1,
+          "quantity": 1
+        }
+      ],
+      "message": ""
+    },
+    {
+      "id": "5bd854",
+      "name": "Chiến Vưỡng",
+      "email": "chien22tuoi@gmail.com",
+      "phone": "0375509193",
+      "address": " Xã Nhạn Môn, Huyện Pác Nặm, Tỉnh Bắc Kạn",
+      "numberHome": "2",
+      "purchase_date": "10/1/2023",
+      "inFor": [
+        {
+          "id": 1,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "quantity": 1
+        },
+        {
+          "id": 5,
+          "quantity": 1
+        },
+        {
+          "id": 6,
+          "quantity": 1
+        }
+      ],
+      "message": ""
+    }
+  ]
+}
